@@ -31,7 +31,7 @@
 <!-- Modal -->
 <div
   x-cloak
-  :class="{'opacity-100 pointer-events-auto': open, 'opacity-0 pointer-events-none': !open}"
+  :class="{'opacity-100': open, 'opacity-0 pointer-events-none': !open}"
   class="fixed inset-0 z-[100] overflow-y-auto ease-out duration-300"
   aria-labelledby="modal-title" role="dialog" aria-modal="true">
   <div class="flex items-end justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
@@ -40,7 +40,7 @@
     <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
     <div
       :class="{'opacity-100 translate-y-0 sm:scale-100': open, 'opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95': !open}"
-      class="inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl sm:my-8 sm:align-middle sm:max-w-xl sm:w-full sm:p-6">
+      class="inline-block overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl md:px-4 md:pt-5 md:pb-4 sm:my-8 sm:align-middle sm:max-w-xl sm:w-full sm:p-6">
       <div class="w-full h-[70vh] overflow-scroll">
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdRBqLXaRAkocxwgnXhW2M4ier2am_jOtz787rArEJ-QlJFWA/viewform?embedded=true" class="w-full h-full"  frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
       </div>
